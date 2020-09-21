@@ -1,0 +1,90 @@
+/* aside sidebar menu */
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before, 
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::after {
+    background: $white-col;
+}
+aside {
+    position: fixed;
+    top: 54px;
+    left: 0;
+    min-height: 100vh;
+    z-index: 100;
+
+    .mdc-drawer {
+        min-height: 100vh;
+        box-shadow: 10px 0 10px -4px $grey-dark-col;
+        background: $grey-mid-dark-col; /* background*/
+    }
+
+    .mdc-list-item__graphic {
+        margin-right: 8px !important;
+    }
+
+    /* main menu */
+    .mdc-list-item {
+        margin: 0 !important;
+        border-radius: 0 !important;
+        border-left: 3px solid $grey-mid-dark-col !important; /* border color */
+        color: $black-col !important; /* font color */
+        font-size: 1em;
+        .mdc-list-item__graphic {
+            color: $black-col !important; /* icon color */
+        }
+    }
+    .mdc-list-item.mdc-list-item--activated {
+        border-left: 3px solid $primary-col !important;
+        background: $white-col !important;
+        color: $primary-col !important;
+        .mdc-list-item__graphic {
+            color: $primary-col !important;
+        }
+    }
+    .mdc-list-item.mdc-list-item--activated:hover, .mdc-list-item:hover {
+        color: $primary-col !important;
+        background: $secondary-col !important;
+        border-left: 3px solid $primary-col !important; /* border color */
+        .mdc-list-item__graphic {
+            color: $primary-col !important;
+        }
+    }
+
+    /* sub menu */
+    .panel .mdc-list-item.mdc-list-item--activated {
+        border-left: 3px solid $primary-col !important;
+        background: $white-col !important;
+        color: $primary-col !important;
+        .mdc-list-item__graphic {
+            color: $primary-col !important;
+        }
+    }
+
+    /* menu toggle */
+    div.panel {
+        opacity: 0; 
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease-in;
+    }
+    div.panel.show {
+        opacity: 1;
+        height: auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 959px) { 
+    aside {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    aside {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    aside {
+        width: 20%;
+    }
+}

@@ -1,0 +1,64 @@
+/* sign in */
+#sign-in, #sign-up{
+    .mdc-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) ;
+        width: 596px;
+        height: 575px;
+        padding: 16px;
+        font-size: 20px;
+        background: $white-col;
+        .mdc-card__media{
+            height: 100%;
+            background: $grey-mid-dark-col;
+            .mdc-card__media-content {
+                text-align: center;
+                img {
+                    margin: 45px 0;
+                }
+                div:nth-child(5) {
+                    margin: 20px 0 27px 0;
+                    a {
+                        margin-top: 14px;
+                        line-height: 55px;
+                    }
+                }
+                div:nth-child(6) {
+                    margin: 13px 0 45px 0;
+                    input[type="checkbox"] {
+                        vertical-align:middle;
+                    }
+                }
+                overflow: hidden;
+            }
+        }
+    }
+    #captcha {
+        height: 55px;
+        line-height: 55px;
+        margin: 7px 0;
+        text-decoration: line-through;
+        background: $secondary-col;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 959px) { 
+    #sign-in, #sign-up {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    #sign-in, #sign-up {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sign-in, #sign-up {
+        display: block;
+    }
+}

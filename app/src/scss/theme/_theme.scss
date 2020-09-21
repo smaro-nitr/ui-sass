@@ -1,0 +1,26 @@
+/* theme color */
+.none-text { color:none !important}; .none-bg { background:none !important};
+
+$white-col: #FFFFFF; .white-col-text { color:$white-col !important}; .white-col-bg { background:$white-col !important};
+$black-col: #000000; .black-col-text { color:$black-col !important}; .black-col-bg { background:$black-col !important};
+
+$grey-light-col: #EFEFEF; .grey-light-col-text { color:$grey-light-col !important}; .grey-light-col-bg { background:$grey-light-col !important}; 
+$grey-mid-dark-col: #E5E5E5; .grey-mid-dark-col-text { color:$grey-mid-dark-col !important}; .grey-mid-dark-col-bg { background:$grey-mid-dark-col !important};
+$grey-dark-col: #909090; .grey-dark-col-text { color:$grey-dark-col !important}; .grey-dark-col-bg { background:$grey-dark-col !important};
+
+$primary-col: #3A7AB0; .primary-col-text { color:$primary-col !important}; .primary-col-bg { background:$primary-col !important};
+$secondary-col: #d9e7f2; .secondary-col-text { color:$secondary-col !important}; .secondary-col-bg { background:$secondary-col !important};
+$tertiary-col: #404040; .tertiary-col-text { color:$tertiary-col !important}; .tertiary-col-bg { background:$tertiary-col !important};
+
+$error-col: #FF0000; .error-col-text { color:$error-col !important}; .error-col-bg { background:$error-col !important};
+$success-col: rgb(32, 209, 77); .success-col-text { color:$success-col !important}; .success-col-bg { background:$success-col !important};
+$info-col: rgb(65, 120, 202); .info-col-text { color:$info-col !important}; .info-col-bg { background:$info-col !important};
+
+/* overridden structure */
+@import "app/src/scss/theme/_form.scss";
+
+/* customized structure */
+@import "app/src/scss/theme/_sign.scss";
+@import "app/src/scss/theme/_header.scss";
+@import "app/src/scss/theme/_aside.scss";
+@import "app/src/scss/theme/_section.scss";

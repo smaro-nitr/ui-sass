@@ -1,0 +1,37 @@
+/* section */
+section {
+    position: absolute;
+    top: 54px;
+    right: 0;
+}
+
+/* prototype v2 section */
+@import "app/src/scss/theme/_section/_dashboard_live.scss";
+@import "app/src/scss/theme/_section/_manage_employee.scss";
+@import "app/src/scss/theme/_section/_add_employee.scss";
+@import "app/src/scss/theme/_section/_blank_group.scss";
+@import "app/src/scss/theme/_section/_manage_group.scss";
+@import "app/src/scss/theme/_section/_add_group.scss";
+@import "app/src/scss/theme/_section/_group_add_employee.scss";
+
+/* prototype v3 section */
+@import "app/src/scss/theme/_section/_manage_shift.scss";
+@import "app/src/scss/theme/_section/_add_shift.scss";
+
+@media (min-width: 0px) and (max-width: 959px) { 
+    section {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        width: 80%;
+    }
+}

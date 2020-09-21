@@ -1,0 +1,76 @@
+#manage-shift {
+    padding: 10px 5% !important;
+    .mdc-layout-grid__inner:first-child {
+        height: 16px;
+        padding: 17px 0 15px 0;
+        font-size: 16px;
+        font-weight: bold;
+        i {
+            padding: 1px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        span {
+            padding: 3px 10px;
+            font-size: 16px !important;
+        }
+        div:first-child {
+            span:nth-child(2) {
+                padding: 0 7px;
+                margin-top: 3px;
+                color: $primary-col;
+                background: $secondary-col;
+                border-radius: 7px; 
+                font-weight: normal;
+            }
+        }
+        div:last-child {
+            i {
+                color: $primary-col;
+                background: none;
+            }
+        }
+    }
+    
+    .mdc-layout-grid__inner:nth-child(2) {
+        margin-top: 22px;
+        width: 100%;
+        table {
+            width: 100%;
+            text-align: left;
+            vertical-align: middle;
+            border: none;
+            border-spacing: 0 10px;
+            border-collapse: separate;
+            th {
+                color: $tertiary-col;
+                font-weight: normal;
+            }
+            tr {
+                line-height: 22px;
+                img {
+                    vertical-align: middle;
+                    height: 34px;
+                    width: 34px;
+                    border-radius: 17px;
+                    margin: 5px;
+                }
+                td:nth-child(1) {
+                    border-radius: 5px 0px 0px 7px;
+                }
+                td {
+                    margin-top: 5px;
+                    padding: 10px 2px;
+                    background: $grey-light-col;
+                }
+                td:last-child {
+                    border-radius: 0px 7px 7px 0px;
+                    i {
+                        font-size: 12px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#group-add-employee {
+    padding: 10px 5% !important;
+    .mdc-layout-grid__inner:first-child {
+        height: 16px;
+        padding: 17px 0;
+        font-weight: bold;
+        i {
+            padding: 1px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        span {
+            padding: 3px 10px;
+            font-size: 16px !important;
+        }
+    }
+    .mdc-layout-grid__inner:nth-child(2) {
+        margin-top: 22px;
+        width: 100%;
+        #white-col-border-box {
+            margin-top: -7px;
+            padding: 0 20px;
+            max-height: 480px;
+            border: 1px solid $white-col;
+            border-top: none;
+            background: $grey-light-col;
+            overflow: hidden;
+        }
+        #employee-list {
+            width: 100%;
+            height: 518px;
+            margin-top: 7px;
+            border: 1px solid $grey-light-col;
+            border-radius: 5px;
+            background: $white-col;
+            div:first-child {
+                height: 16px;
+                width: 100%;
+                padding: 19px 0;
+                border-bottom: 1px solid $grey-light-col;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                background: $white-col;
+            }
+            div:last-child {
+                height: 460px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            i {
+                margin-top: -3px;
+                font-size: 16px;
+                background: $primary-col;
+                color: $white-col;
+                vertical-align: middle;
+            }
+        }
+    }
+}

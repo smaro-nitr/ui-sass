@@ -1,0 +1,117 @@
+/* dashboard header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    padding: 7px 0;
+    background: $tertiary-col;
+    color: $white-col;
+    box-shadow: 0px 4px 20px $grey-dark-col;
+    z-index: 100;
+    #logoContainer {
+        overflow: hidden;
+        img {
+            width: 130px;
+            height: 20px;
+            margin: 10px 14px;
+        }
+    }
+    #settingContainer {
+        .notification {
+            padding: 0 7px;
+            margin-right: 40px; 
+            border-radius: 7px; 
+            vertical-align: middle;
+            color: $primary-col;
+            background: $secondary-col;
+        }
+        img {
+            vertical-align: middle;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            margin: 5px 0;
+        }
+        span {
+            margin: 0 4px;
+        }
+        i {
+            vertical-align: middle;
+        }
+        #userName{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px !important;
+            line-height: 30px;
+            max-width: 200px;
+            overflow: hidden;
+        }
+    }
+    .material-icons {
+        color: $white-col;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        i {
+            vertical-align: middle;
+            margin-right: -10px; 
+        }
+        .dropbtn {
+            color: $white-col;
+            font-size: 30px;
+            border: none;
+            cursor: pointer; 
+        }
+        .dropdown-content-wrap {
+            display: none;
+            padding: 30px 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: -10px;
+            background-color: $tertiary-col;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a {
+                color: $white-col !important;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            a:hover {
+                background: $white-col !important;
+                color: $primary-col !important;
+            }
+        }
+    }
+    .dropdown:hover {
+        .dropdown-content-wrap, .dropdown-content {
+            display: block;
+        }
+        .dropbtn {
+            color: $primary-col !important;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 959px) { 
+    header {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    header {
+        display: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        display: 100%;
+    }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>ui-sass</title>
+
+    <meta name="author" content="Subhendu Kumar Sahoo" />
+    <meta name="contact" content="smaro.nitr@gmail.com" />
+
+    <link
+      rel="icon"
+      href="assets/img/40x40_logo.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="app/assets/css/bundle.css" />
+  </head>
+
+  <body>
+    <header class="w-100">
+      <div class="w-50 float-left text-align-left" id="logoContainer">
+        <div class="float-right w-10">&nbsp;</div>
+        <img src="assets/img/300x40_full_logo_white.png" alt="logo" />
+      </div>
+      <div class="w-50 float-right text-align-right" id="settingContainer">
+        <div class="float-right w-10">&nbsp;</div>
+        <div class="float-right w-70">
+          <i class="material-icons fs-24">notifications</i>
+          <span class="notification pointer">10</span>
+          <img src="assets/img/dummy_user.png" alt="user" />
+          <div class="dropdown pointer">
+            <span id="userName">John Doe</span>
+            <i class="material-icons dropbtn">arrow_drop_down</i>
+            <div class="dropdown-content-wrap">
+              <div class="dropdown-content text-align-left">
+                <a href="javascript:void(0)">My Setting</a>
+                <a href="javascript:void(0)">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-right w-20">&nbsp;</div>
+      </div>
+    </header>
+
+    <aside>
+      <div class="mdc-drawer w-100">
+        <div class="mdc-drawer__content">
+          <nav class="mdc-list">
+            <!--Dashboard-->
+            <a
+              class="mdc-list-item mdc-list-item--activated accordion"
+              href="javascript:void(0)"
+            >
+              <i class="material-icons mdc-list-item__graphic">dashboard</i>
+              <span class="mdc-list-item__subtitlet">Dashboard</span>
+            </a>
+            <!--Manage Employees-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic"
+                >account_circle</i
+              >
+              <span class="mdc-list-item__text">Manage Employees</span>
+            </a>
+            <div class="panel">
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">All Employees</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Bulk Registration</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Roles</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Permissions</span>
+              </a>
+            </div>
+            <!--Manage Organization-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic">meeting_room</i>
+              <span class="mdc-list-item__text">Manage Organization</span>
+            </a>
+            <div class="panel">
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Locations</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Departments</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Groups</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Holiday Calender</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet"
+                  >Organization Settings</span
+                >
+              </a>
+            </div>
+            <!--Manage Shifts-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic">av_timer</i>
+              <span class="mdc-list-item__text">Manage Shifts</span>
+            </a>
+            <div class="panel">
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Shift Schedule</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Shift Calender</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Shift Rotation</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Shift Settings</span>
+              </a>
+            </div>
+            <!--Manage Leave-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic"
+                >insert_invitation</i
+              >
+              <span class="mdc-list-item__text">Manage Leave</span>
+            </a>
+            <div class="panel">
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Leave Application</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Regularization</span>
+              </a>
+            </div>
+            <!--Manage Cameras-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic">photo_camera</i>
+              <span class="mdc-list-item__text">Manage Cameras</span>
+            </a>
+            <div class="panel"></div>
+            <!--Support-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic">chat</i>
+              <span class="mdc-list-item__text">Support </span>
+            </a>
+            <div class="panel"></div>
+            <!--Manage Cameras-->
+            <a class="mdc-list-item accordion" href="javascript:void(0)">
+              <i class="material-icons mdc-list-item__graphic">settings</i>
+              <span class="mdc-list-item__text">Settings</span>
+            </a>
+            <div class="panel">
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">General Settings</span>
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet"
+                  >Pay Period Settings</span
+                >
+              </a>
+              <a class="mdc-list-item" href="javascript:void(0)">
+                <i class="material-icons mdc-list-item__graphic fs-10">lens</i>
+                <span class="mdc-list-item__subtitlet">Audit Trails</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="mdc-layout-grid" id="manage-employee">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-6 text-align-left">
+            <span class="float-left">All Employees</span>
+            <span class="float-left">10</span>
+          </div>
+          <div class="mdc-layout-grid__cell--span-6 text-align-right pointer">
+            <i class="material-icons">add_circle</i>
+            <span class="float-right">Add Employee</span>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-12">
+            <table>
+              <tr>
+                <th>Employee</th>
+                <th>Shift</th>
+                <th>Status</th>
+                <th>Attendance</th>
+                <th>Happiness</th>
+                <th class="primary-col-text text-align-right pointer">
+                  <i class="material-icons fs-12">tune</i> Filter
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <span class="float-left pointer">
+                    <img src="assets/img/dummy_user.png" alt="user" />
+                  </span>
+                  <span class="float-left pointer">
+                    John Doe John <br />
+                    <span class="grey-dark-col-text"> CI2245 </span>
+                  </span>
+                </td>
+                <td>
+                  Shift A
+                  <span class="grey-dark-col-text"><br />08:00-19:00</span>
+                </td>
+                <td>
+                  Checked-in <span class="grey-dark-col-text"><br />08:00</span>
+                </td>
+                <td>
+                  <span class="float-left">
+                    <img src="assets/img/attendance/85.png" alt="%" />
+                  </span>
+                  <span class="float-left percentage"> 87% </span>
+                </td>
+                <td>
+                  <span class="float-left">
+                    <img src="assets/img/happy/70.png" alt="%" />
+                  </span>
+                  <span class="float-left percentage"> 72% </span>
+                </td>
+                <td>
+                  <i class="material-icons">edit</i> Update <br />
+                  <i class="material-icons">switch_camera</i> Deactivate
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="float-left pointer">
+                    <img src="assets/img/dummy_user.png" alt="user" />
+                  </span>
+                  <span class="float-left pointer">
+                    John Doe John <br />
+                    <span class="grey-dark-col-text"> CI2245 </span>
+                  </span>
+                </td>
+                <td>
+                  Shift A
+                  <span class="grey-dark-col-text"><br />08:00-19:00</span>
+                </td>
+                <td>
+                  Checked-in <span class="grey-dark-col-text"><br />08:00</span>
+                </td>
+                <td>
+                  <span class="float-left">
+                    <img src="assets/img/attendance/40.png" alt="%" />
+                  </span>
+                  <span class="float-left percentage"> 37% </span>
+                </td>
+                <td>
+                  <span class="float-left">
+                    <img src="assets/img/happy/90.png" alt="%" />
+                  </span>
+                  <span class="float-left percentage"> 90% </span>
+                </td>
+                <td>
+                  <i class="material-icons">edit</i> Update <br />
+                  <i class="material-icons">switch_camera</i> Deactivate
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app/assets/js/bundle.js"></script>
+  </body>
+</html>

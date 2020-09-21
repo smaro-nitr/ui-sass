@@ -1,0 +1,34 @@
+#blank-group {
+    padding: 10px 5% !important;
+    .mdc-layout-grid__inner:first-child {
+        height: 16px;
+        padding: 17px 0 15px 0;
+        font-size: 16px;
+        font-weight: bold;
+        i {
+            padding: 1px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        span {
+            padding: 3px 10px;
+            font-size: 16px !important;
+        }
+        div:first-child {
+            span:nth-child(2) {
+                padding: 0 7px;
+                margin-top: 3px;
+                color: $primary-col;
+                background: $secondary-col;
+                border-radius: 7px; 
+                font-weight: normal;
+            }
+        }
+        div:last-child {
+            i {
+                color: $primary-col;
+                background: none;
+            }
+        }
+    }
+}

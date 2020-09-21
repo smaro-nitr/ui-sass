@@ -1,0 +1,32 @@
+#add-employee {
+    padding: 10px 5% !important;
+    .mdc-layout-grid__inner:first-child {
+        height: 16px;
+        padding: 17px 0;
+        font-weight: bold;
+        i {
+            padding: 1px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        span {
+            padding: 3px 10px;
+            font-size: 16px !important;
+        }
+    }
+    .mdc-layout-grid__inner:nth-child(2) {
+        margin-top: 22px;
+        width: 100%;
+        img {
+            height: 46px;
+            width: 46px;
+            margin: 91px auto 0;
+        }
+    }
+    #drag-drop {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto 18px;
+        border: 1px dashed $grey-dark-col;
+    }
+}

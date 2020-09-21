@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+@import "@material/textfield/mdc-text-field";
+@import "@material/fab/mdc-fab";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+@import "@material/button/mdc-button";
+@import "@material/select/mdc-select";
+@import "@material/form-field/mdc-form-field";
+@import "@material/radio/mdc-radio";
+@import "@material/checkbox/mdc-checkbox";
+
+@import "app/src/scss/theme/_theme.scss";
+@import "app/src/scss/_static.scss";
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: $grey-mid-dark-col;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+*:not(.material-icons) {
+    font-size: 14px; 
+    font-family: 'Lato', sans-serif !important;
+}
+
+/* hyperlink */
+a {
+    font-size: 14px; 
+    text-decoration: none !important;
+    color: $primary-col !important;
+}
+
+/* notification */
+.indicator {
+    padding: 0 7px;
+    border-radius: 7px; 
+    vertical-align: middle;
+    color: $primary-col;
+    background: $secondary-col;
+}
+
+/* glowing text */
+.primary-col-glow {
+  animation-name: glow-icon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes glow-icon {
+    0%   {color: $black-col;}
+    50%  {color: $primary-col;}
+    100% {color: $black-col;}
+}
